@@ -1,5 +1,5 @@
-let fname: string = "Salawin";
-let lname: string = "Janaijang";
+let fname: string = "jakkrwut";
+let lname: string = "saming";
 let course: string[] = ["database","oop","Web"];
 let mark: number[] = [80,76,65];
 let pass: boolean = true;
