@@ -2,10 +2,8 @@ let productName: string = "กระเป๋าเป้เดินทาง";
 let pricePerUnit: number = 600;
 let quantity: number = 2;
 let isMember: boolean = false;
-
 let totalPrice: number = pricePerUnit * quantity;
 
-// ได้ส่วนลดถ้ายอดเกิน 1000 หรือเป็นสมาชิก
 let hasDiscount: boolean = (totalPrice > 1000) || isMember;
 
 let discount: number = hasDiscount ? totalPrice * 0.10 : 0;
