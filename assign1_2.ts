@@ -5,6 +5,7 @@ let price: number = 550;
 let bookSummary: [string, number] = [bookTitle, price];
 
 let isAvailable: boolean = true;
+
 let discountRate: number = 0.15;
 let finalPrice: number = price * (1 - discountRate);
 
@@ -13,6 +14,7 @@ let isPremium: boolean = price > 500;
 let canDisplay: boolean = isPremium && isAvailable;
 
 console.log("========== ระบบจัดการข้อมูลหนังสือ ==========");
+
 console.log(`ชื่อหนังสือ: ${bookSummary[0]}`);
 console.log(`รหัส ISBN: ${isbn}`);
 console.log(`ราคาปกติ: ${bookSummary[1]} บาท`);
@@ -26,4 +28,7 @@ console.log(
       : "จัดวางที่ชั้นหนังสือปกติ"
   }`
 );
+
+console.log("===========================================");
+console.log(`คำแนะนำการจัดวาง: ${canDisplay ? "สามารถจัดแสดงที่หน้าตู้โชว์ได้" : "จัดวางที่ชั้นหนังสือปกติ"}`);
 console.log("=============================================");
